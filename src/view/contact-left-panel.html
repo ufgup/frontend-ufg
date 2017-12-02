@@ -1,0 +1,8 @@
+<template>
+    <ul>
+        <li repeat.for="contact of contacts">
+            <strong class="name">${contact.name}</strong>
+            <span class="phone">${contact.phone | phone}</span>
+        </li>
+    </ul>
+</template>

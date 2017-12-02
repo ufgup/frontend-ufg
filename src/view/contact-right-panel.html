@@ -1,0 +1,15 @@
+<template>
+    <form submit.delegate="addContact()">
+        <div class="form-field">
+            <label for="name">Nome</label>
+            <input type="text" id="name" value.bind="contact.name">
+        </div>
+        <div class="form-field">
+            <label for="phone">Telefone</label>
+            <input type="text" id="phone" value.bind="contact.phone">
+        </div>
+        <button type="submit" id="addButton">
+            Adicionar
+        </button>
+    </form>
+</template>
