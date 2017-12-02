@@ -6,9 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .contact-left-panel {
+            background-color: yellowgreen;
+            display: block;
+            height: 1vh;
+            float: left;
+            padding: 10px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
+    <section class="contact-list">
+        <h1>Agenda de contatos</h1>
+        <section class="contact-left-panel">
+            <ul id="contactList">
+                <li id="contactItemTemplate">
+                    <p>
+                        <strong>Fulanito</strong><br/> (62) 1111-1111
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="contact-right-panel">
+            <form>
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="phone">Telefone</label>
+                    <input type="text" id="phone">
+                </div>
+                <button type="button" id="addButton">
+                    Adicionar
+                </button>
+            </form>
+        </section>
+    </section>
+
     <script src="js/sample1.js"></script>
 </body>
 
