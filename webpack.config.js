@@ -5,10 +5,10 @@ module.exports = {
         sample1: "./src/index.ts"
     },
     module: {
-        rules: [{
-            test: /\.tsx?$/,
-            loader: "ts-loader"
-        }]
+        rules: [
+            { test: /\.tsx?$/, loaders: ["ts-loader"] },
+            { test: /\.scss$/, loaders: ['style-loader', 'css-loader', 'sass-loader'] }
+        ]
     },
     resolve: {
         extensions: [".ts", ".tsx", ".jsx", ".js"]
