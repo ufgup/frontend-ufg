@@ -1,16 +1,3 @@
 <template>
-  <require from="./view/contact-left-panel"></require>
-  <require from="./view/contact-right-panel"></require>
-  
-  <section class="contact-list">
-    <h1>Agenda de contatos</h1>
-
-    <section class="contact-left-panel">
-      <contact-left-panel contacts.bind="contacts"></contact-left-panel>
-    </section>
-
-    <section class="contact-right-panel">
-      <contact-right-panel contacts.bind="contacts"></contact-right-panel>
-    </section>
-</section>
+  <router-view></router-view>
 </template>

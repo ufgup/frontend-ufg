@@ -1,15 +1,13 @@
 <template>
-    <form submit.delegate="addContact()">
-        <div class="form-field">
+    <ui-form submit.delegate="addContact()">
+        <ui-field>
             <label for="name">Nome</label>
             <input type="text" id="name" value.bind="contact.name">
-        </div>
-        <div class="form-field">
+        </ui-field>
+        <ui-field>
             <label for="phone">Telefone</label>
             <input type="text" id="phone" value.bind="contact.phone">
-        </div>
-        <button type="submit" id="addButton">
-            Adicionar
-        </button>
-    </form>
+        </ui-field>
+        <ui-button type="submit" text="Salvar" theme="primary"></ui-button>
+    </ui-form>
 </template>
